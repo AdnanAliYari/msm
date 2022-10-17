@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/msm
+    username: viratech
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        default_schema: msm
+    open-in-view: false
+    hibernate:
+      ddl-auto: create
+server:
+  servlet:
+    context-path: /api
+  port: 8090
